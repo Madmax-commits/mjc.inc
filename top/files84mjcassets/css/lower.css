@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+.wrap.lower:after {transition : opacity 2s ease-out;opacity:0;width:100%;}
+.wrap.lower.disp:after {content:"";background:url(../images/bg_sp.jpg) no-repeat center 0;background-size:cover;position:fixed;top:0;left:0;width:100%;height:100%;z-index: -1;opacity:1;}
+
+.page_header {padding: 0 6%;padding-top: 8em;}
+.page_header .ttl {font-size: 1.5em;margin-bottom:2em;letter-spacing:.05em;}
+.inner {padding: 0 6%;font-size:.9em;}
+.inner p {margin-bottom:1em;}
+.inner p:last-child {margin-bottom:0;}
+.back_link {text-align: center;margin: 5em 0;}
+.back_link a {color:#fff;font-size:1em;line-height: 1;}
+
+.privacy > section {margin-top:2em;}
+.privacy h2 {margin-bottom:.5em;}
+
+.form_in {margin: 0 auto;}
+.form_in h3 {font-size: 1.2em;font-weight: 500;border-bottom: 1px solid #fff;padding-bottom: 0.8em;margin-bottom: 0.8em;}
+.form_in .form_details {margin-bottom:1em;font-size: .95em;}
+.form_in .form_details > div {margin:0 0 1em;}
+.form_in .form_details .notes li {padding-left:1em;position:relative;}
+.form_in .form_details .notes li:before {content:"※";position:absolute;top:0;left:0;}
+.form_in .formarea {font-weight: 300;}
+.form_in .formarea dt {font-size: 1em;line-height: 1.5;margin-bottom: 0.5em;margin-top: 3em;}
+.form_in .formarea dd {margin-bottom:1.5em;}
+.form_in .formarea .btnwrap {text-align:center;margin:2.5em auto 2em;}
+.form_in .formarea .btn {    font-size: 13px;background: #fff;cursor: pointer;padding: 0;display: inline-block;line-height: 3;min-width: 100%;margin: 0;border: 1px solid #fff;color: #000;margin-bottom: 2em;}
+.form_in .formarea .btn.back {color:#fff;background:none;}
+.form_in .formarea .btn.not {cursor: default;background: #666;border: 1px solid #666;color: #999;}
+
+.aspform_title {font-size: 1em;margin-bottom: 0.5em;}
+.form_check .aspform_title {font-weight:bold;}
+.form_check .aspform_title:before {content:"■";}
+.form_check .aspform_answer {padding-bottom: 1em;border-bottom: 1px dotted #444;margin-bottom: 1em;}
+.form_check form[name="ques2"] input[type="submit"] {margin-top:1em;margin-bottom:2em;background:none;}
+.form_check .formarea dt {margin-top: 2em;}
+.form_check .formarea dd {padding-bottom: 2em;border-bottom:1px solid #fff;}
+.form_check .formarea .btnwrap {margin-top:6em;}
+.form_check .formarea dt:nth-last-child(2) {display:none;}
+
+input {font-weight: 300;}
+input[type="text"], input[type="email"] , textarea {font-family: 'Noto Sans JP', sans-serif;border-radius: 0;outline: none;background: none;-webkit-border-radius: 0;-webkit-appearance: none;-webkit-tap-highlight-color: rgba(255, 255, 255, 1);border: 1px solid #fff;padding: .8em;font-size: 12px;margin: 0;width: 100%;color: #fff;font-weight:300;}
+input[type="submit"] , button {-webkit-appearance: none;-moz-appearance: none;appearance: none;padding: 0;border: none;outline: none;background: transparent;}
+textarea {min-height: 15em;}
+input::placeholder, textarea::placeholder {color:#fff;}
+select {-webkit-appearance: none;-moz-appearance: none;appearance: none;outline: none;background: #fff;width: auto;border: 1px solid #ddd;padding: .5em;font-size: 12px;}
+input[type="submit"] {display: block;color: #fff;padding: 0;cursor: pointer;outline: none;font-size: 12px;width: 14em;line-height: 2.8;margin: 0 auto;background: none;font-family: 'Noto Sans JP', sans-serif;margin-top: 2em;letter-spacing: .5em;text-indent: 0.5em;border: 1px solid #fff;}
+input[type="radio"] , input[type="checkbox"] {margin: 0 0.5em;transform: scale(1.5);}
+input:focus::-webkit-input-placeholder {color: transparent;}
+input:focus::-moz-placeholder {color: transparent;}
+input:focus::-ms-input-placeholder {color: transparent;}
+input:focus::placeholder {color: transparent;}
+input:-webkit-autofill {transition: background-color 5000s ease-in-out 0s !important;-webkit-text-fill-color: #fff !important;}
+
+.formlist li {margin: 3em 0 6em;}
+.formlist li input[type="text"] , .formlist li input[type="email"] {padding:.8em 0;border:none;border-bottom: 1px solid #fff;}
+.formlist li p:first-child {margin-bottom:1em;font-size: 1.1em;}
+.formlist input[type="radio"] , .formlist input[type="checkbox"] {display: none;}
+.formlist label {position:relative;display:block;margin-bottom: .8em;line-height: 1.6;padding-left:25px;}
+.formlist label::before,.formlist label::after {content: "";display: block; border-radius: 50%;position: absolute;width: 15px;height: 15px;left: 0;top: 0;border: 1px solid #fff;background-color:transparent;}
+.formlist input:checked + label::after {opacity: 1;background-color: #fff;}
+.formlist .consent {display: flex;align-items: center;justify-content: center;margin-top: 6em;margin-bottom: 2em;}
+.formlist .consent label::before , .formlist .consent label::after {border-radius: 0;}
+.formlist .consent input[type="checkbox"]:checked + label::after {opacity: 1;background:url(../images/check.png) no-repeat center;background-size:70%;}
+.formlist .consent label {padding-left: 0;height: 15px;width: 15px;margin-bottom: 0;top: -2px;margin-right: 10px;}
+.formlist .consent a {color: #fff;display: block;}
+.error_area {border-top: 1px dotted #666;padding-top: 1em;margin-top: 1em;}
+
+.contact_page .list li {padding-left:2em;position:relative;margin-bottom:1em;}
+.contact_page .list li:before {content:"・";position:absolute;top:0;left:0;}
+.contact_page .list li a {color:#fff;}
+
+@media screen and (min-width:568px) {
+}
+
+@media screen and (min-width:768px) {
+.wrap.lower.disp:after {background-image:url(../images/bg.jpg);}
+.page_header {padding-left:4%;padding-right:4%;}
+.page_header .ttl {font-size: 1.8em;}
+.inner {padding: 0 4%;font-size:.95em;}
+input[type="text"], textarea , input[type="submit"] , input[type="email"] , .form_in .formarea .btn {font-size:14px;}
+.form_in .formarea .btn {min-width: 14em;margin: 0 .5em;}
+.formlist label {margin-bottom: 1em;line-height: 1.3;}
+
+.form_check .formarea .btnwrap {margin-top: 6em;display: flex;justify-content: center;flex-direction: row-reverse;}
+}
+
+@media screen and (min-width:1024px) {
+}
+@media screen and (min-width:1025px) {
+.page_header {max-width:1200px;margin:0 auto;padding-left: 40px;padding-right: 40px;}
+.inner {max-width:1200px;margin:0 auto;padding: 0 40px;}
+}
+
+@media screen and (min-width:1600px) {
+input[type="text"], textarea , input[type="submit"] , .form_in .formarea .btn {font-size:15px;}
+}
